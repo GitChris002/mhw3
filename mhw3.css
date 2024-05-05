@@ -1,0 +1,1055 @@
+
+@font-face {
+  font-family: 'boldo';
+  src: url('WebProgramming/Fonts/gibson/GibsonBold.OTF') format('truetype'); 
+  
+}
+
+@font-face {
+  font-family: 'heavy';
+  src: url('WebProgramming/Fonts/gibson/GibsonBoldIt.OTF') format('truetype'); 
+  
+}
+
+@font-face {
+  font-family: 'ital';
+  src: url('WebProgramming/Fonts/gibson/GibsonSemiBdIt.OTF') format('truetype'); 
+  
+}
+
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: rgb(34 46 57);
+    font-family: 'boldo', sans-serif;
+    z-index: 999;
+     font-weight: bold;
+     animation: slideFromTop 0.4s ease-in;
+  }
+  
+  .logo {
+    width: 29px;
+    height: 28.13px;
+    border-color: transparent;
+  }
+  
+  .Menu {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .Menu a {
+    color: rgb(34 46 57);
+    text-decoration: none;
+    margin: 0 4px;
+  }
+  
+  .Menu a:hover {
+    color: rgb(255 204 0);
+  }
+
+
+  
+  .Iscriviti a {
+    color: #101517;
+    text-decoration: none;
+    margin: 0 4px;
+  }
+  
+  .Iscriviti a:hover {
+    color: rgb(255 204 0);
+  }
+  
+  .iscrizione:hover {
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .Menu p {
+    margin: 0 15px;
+    font-size: 0.9rem;
+  }
+  
+  .Iscriviti {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .Iscriviti p {
+    margin: 0 15px;
+  }
+  
+  .iscrizione {
+    background-color: rgb(255 204 0);
+    color: #101517;
+    padding: 10px 20px;
+    margin-right: 45px;
+  }
+  
+  .contenuto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: calc(100vh - 130px);
+    color: white;
+    font-family: 'boldo', sans-serif;
+    font-weight: bold;
+  }
+  
+  .originale {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 19px;
+  }
+  
+  .testo {
+    height: 30%;
+    width: 77%;
+    text-align: center;
+    position: relative;
+    top: 4%;
+  }
+  
+  .contenuto h3 {
+    height: 10%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .contenuto
+  h2,h3 {
+    height: 36.6%;
+    width: 100%;
+    font-size: 5.1rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    animation: slideFromBottom 0.8s ease; 
+  }
+  .forma {
+    margin-top: 0.2rem;
+  }
+  
+  .background-image {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: slideFromBottom 0.8s ease; 
+  }
+  
+  .Boxabbonamento {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 36%;
+    margin: 7% auto;
+  }
+  
+  .Boxabbonamento1 {
+    width: 30%;
+    height: 97%;
+    padding: 17px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'heavy', sans-serif;
+    color: rgb(34 46 57);
+    font-weight: bold;
+    margin: 0 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    margin-left: 20%;
+  }
+  
+  .Abbonamento p {
+    font-size: 1.4rem;
+  }
+  
+  .Abbonamento h3 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .Abbonamento .price {
+    font-size: 2.5rem;
+  }
+  
+  .iscrizione2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255 204 0);
+    padding: 10px 20px;
+    margin-right: 45px;
+  }
+  
+  .iscrizione2:hover {
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .Boxabbonamento2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'heavy', sans-serif;
+    color: rgb(34 46 57);
+    margin-top: 20px;
+    margin-right: 20%;
+  }
+  
+  .riga1,
+  .riga2 {
+    display: flex;
+  }
+  
+  .numer1,
+  .numer2,
+  .numer3,
+  .numer4 {
+    padding: 10px;
+    width: 40%;
+  }
+  
+  .numero {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .Boxabbonamento2 p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  
+  .contenuto2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-family: 'heavy', sans-serif;
+  }
+  
+  .scelta,
+  .Fitness,
+  .Scopri {
+    padding-left: 10%; 
+  }
+  
+  .testoimmagine2{
+    display: flex;
+    flex-direction: column ;
+    margin-bottom: 22%;
+    width: 70%;
+  }
+  
+  .Immagine2 {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .contenuto2, #contenuto2-extra {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  #contenuto2-extra {
+    display: flex;
+    flex-direction: row;
+    margin-top: 17%;
+    }
+  
+  #Immagine-dopo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #Immagine4{
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+  
+  }
+  
+  .testo-extra{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    color:whitesmoke;
+    font-family: 'heavy', sans-serif; 
+    margin-bottom: 15%;
+    margin-left: 15%;
+    line-height: 2%;
+  }
+  
+  #testodopo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+  }
+  
+  #scheda{
+    background-color: rgb(255 204 0);
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  #scheda p{
+    color:#101517;
+    font-family: 'heavy', sans-serif; 
+    font-weight: bold;
+    font-size: 2.1rem;
+  }
+  
+  
+  
+  #petto{
+    margin-right: 11%;
+  }
+  
+  #petto h2{
+    color:#101517;
+    font-family: 'heavy', sans-serif; 
+    font-weight: bold;
+    font-size: 1.4rem;
+  } 
+  
+  #pettotesto{
+    color:#101517;
+    font-family: 'heavy', sans-serif; 
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  #pettotesto2{
+    color:#101517;
+    font-family: 'heavy', sans-serif; 
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  #spalle h2{
+    color:#101517;
+    font-family: 'heavy', sans-serif; 
+    font-weight: bold;
+    font-size: 1.4rem;
+  } 
+  
+  #spalletesto{
+    color:#101517;
+    font-family: 'heavy', sans-serif; 
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  #spalletesto2{
+    color:#101517;
+    font-family: 'heavy', sans-serif; 
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  
+  #gambe h2{
+    color:#101517;
+    font-family: 'heavy', sans-serif; 
+    font-weight: bold;
+    font-size: 1.4rem;
+  } 
+  
+  #gambetesto{
+    color:#101517;
+    font-family: 'heavy', sans-serif; 
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  #gambetesto2{
+    color:#101517;
+    font-family: 'heavy', sans-serif; 
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  #indietro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 81%;
+    margin-left: 20%;
+  }
+  
+  #back p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 7% 8%;
+    margin-right: -11%;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-size: 0.87rem;
+  }
+  
+  
+  #back{
+    width: 29%;
+  }
+  
+  #back p:hover {
+    border: 2px solid rgb(255 204 0);
+    cursor: pointer;
+    color: black; 
+  }
+  
+  
+
+  .scelta p {
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: -20%;
+  }
+  
+  .Fitness p {
+    font-size: 4.3rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+  
+  .Scopri{
+    width: 19%;
+  }
+  
+  .Scopri p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 8% 9%;
+    margin-right: -11%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  
+  .Scopri p:hover {
+    border: 2px solid rgb(255 204 0);
+    cursor: pointer;
+    color: white; 
+  }
+  
+  
+  
+  .Boxabbonamento3{
+  width: 100%;
+  height: 34%;
+  }
+  
+  .testo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .abbonamento2{
+  font-family: 'ital', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(34 46 57);
+  margin-top: -2%;
+  }
+  
+  .muoviti{
+    font-family: 'ital', sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    color:rgb(34 46 57);
+    margin-top: 1%;
+    margin-bottom: 4%;
+    width: 65%;
+    margin-right: -8%;
+    text-align: center;
+  }
+  .desc{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+  }
+  
+  .desc p{
+    font-family: 'ital', sans-serif;
+    font-size: 1.27rem;
+    color:rgb(34 46 57);
+    margin-left: 20%;
+    margin-top: -1%;
+    margin-right: 17%;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .Boxabbonamento4 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 39%;
+    margin: 7% auto;
+  }
+  
+  .Boxabbonamento5 {
+    width: 27%;
+    padding: 2%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'heavy', sans-serif;
+    font-weight: bold;
+    color: rgb(34 46 57);
+    margin: 0 5px;
+    box-shadow: 0px 12px 20px  rgba(0, 0, 0, 0.5);
+    margin-left: 14%;
+  }
+  
+  
+  .Standard p {
+    font-size: 1.8rem;
+    margin-top: 3%;
+  }
+  
+  .Standard h3 {
+    color: rgb(255 204 0);
+    font-size: 2.8rem;
+    margin-top: -10%;
+  }
+  
+  .Standard .price2 {
+    font-size: 3.4rem;
+  }
+  
+  .mese1,.mese2{
+  text-align: center;
+  margin-top: -2%;
+  margin-bottom: 2%;
+  font-size: 1rem;
+  font-weight: 200;
+  }
+  .scopri2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(34 46 57);
+    padding: 13px 45px;
+    margin-top: 8%;
+  }
+  
+  .scopri2:hover {
+    border: 2px solid rgb(255 204 0);
+    cursor: pointer;
+  }
+  
+  .Boxabbonamento6 {
+    width: 27%;
+    padding: 2%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'heavy', sans-serif;
+    font-weight: bold;
+    color: rgb(34 46 57);
+    margin: 0 5px;
+    box-shadow: 0px 12px 20px  rgba(0, 0, 0, 0.5);
+    margin-right: 14%;
+  }
+  
+  
+  .Flex p {
+    font-size: 1.8rem;
+    margin-top: 3%;
+  }
+  
+  .Flex h3 {
+    color: rgb(255 204 0);
+    font-size: 2.8rem;
+    margin-top: -10%;
+  }
+  
+  .Flex .price3 {
+    font-size: 3.4rem;
+  }
+  
+  .testo3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testo4{
+    width: 60.67%;
+  }
+  
+  .testo6{
+    font-size: 0.98rem;
+    font-family: 'ital', sans-serif;
+    color: rgb(34 46 57);
+    font-weight: 300;
+    line-height: 1.9;
+    margin-bottom: -1%;
+  }
+  
+  .testo7{
+    font-size: 0.98rem;
+    font-family: 'ital', sans-serif;
+    color: rgb(34 46 57);
+    font-weight: 300;
+    line-height: 1.9;
+    margin-top: 3%;
+  }
+  
+  .Social{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 51%;
+    margin-top: 5%;
+  }
+  
+  .BoxSocial{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(167,169,172,0.2);
+  }
+  .Immagine3{
+    width: 72%;
+  }
+  .BoxSocial a {
+    width: 13%;
+    margin-top: 8%;
+  }
+  
+  
+  .BoxSocial a:not(:last-child) {
+    margin-right: -23%;
+  }
+  
+  .social-item p {
+    text-align: center; 
+    margin-right: 27%;
+    color:rgb(34 46 57) ;
+    font-family: 'heavy', sans-serif;
+  }
+  
+  .info{
+    width: 100%;
+    height: 47%;
+    margin-top: 6%;
+  }
+  
+  .info a{
+    text-decoration: none;
+    color:rgb(34 46 57) ;
+  }
+  
+  .Infobox{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .Infobox1{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Infolegale,.Infoassistenza{
+    line-height: 1.7;
+  }
+  
+  .testoinfo{
+    font-size: 1.1rem;
+    color:rgb(34 46 57) ;
+    font-family: 'ital', sans-serif;
+  
+  }
+  
+  .Infobox p{
+    font-size: 1.3rem;
+    color:rgb(34 46 57) ;
+    font-family: 'ital', sans-serif;
+    font-weight: bold;
+  }
+  
+
+
+
+#Playlist {
+  width: 12%;
+  position: fixed;
+  bottom: -1.1%; 
+  left: 1%; 
+  z-index: 9998; 
+}
+
+#Playlist p {
+  text-align: center;
+  font-family: 'heavy', sans-serif;
+  font-size: 0.9rem; 
+  font-weight: bold;
+  color:rgb(34 46 57); /* Colore del testo */
+}
+
+  /* Stile del pulsante Spotify */
+  #spotifyButton {
+    position: fixed;
+    bottom: 6.7%; /* Utilizzo delle percentuali per il posizionamento */
+    left: -62.8%; /* Utilizzo delle percentuali per il posizionamento */
+    z-index: 9999;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #spotifyButton img {
+    width: 2.7%;
+     /* Utilizzo delle percentuali per la larghezza */
+  }
+  
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Utilizzo di rgba per la trasparenza */
+  background-image: url('WebProgramming/Immagini/Immagine5.jpeg'); /* Imposta l'immagine di sfondo */
+  background-size: cover; /* Assicura che l'immagine copra l'intera area */
+  background-position: center; /* Centra l'immagine */
+  animation: slideFromBottom 0.5s ease; /* Aggiungi un'animazione */
+}
+
+/* Definisci l'animazione */
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+  /* Contenitore della modale */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 2%; /* Utilizzo delle percentuali per il padding */
+    border: 1px solid #888;
+    width: 80%; /* Utilizzo delle percentuali per la larghezza */
+    animation: slideFromBottom 0.5s ease-in; /* Aggiungi un'animazione */
+  }
+  
+  /* Pulsante di chiusura */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 1.4rem; /* Utilizzo delle percentuali per la dimensione del font */
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Stili per gli elementi dell'album */
+  .album {
+    display: flex; /* Utilizza flexbox per il layout */
+    align-items: center; /* Centra verticalmente gli elementi */
+    margin: 2%; /* Margine esterno del 2% rispetto al parent container */
+  }
+  
+  .album img {
+    width: 20%; /* Larghezza dell'immagine del 20% rispetto al container album */
+    margin-right: 2%; /* Aggiungi margine destro del 2% rispetto all'immagine */
+  }
+  
+  .album-info {
+    flex: 1; /* Flessibilità per riempire lo spazio disponibile */
+  }
+  
+  /* Aggiungi stili per la modale */
+  .song {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+  
+  .song-title, .song-artist, .song-duration {
+    flex: 1; /* Flessibilità per occupare lo stesso spazio */
+  }
+  
+  
+  /* Stili per la durata della canzone */
+  .song-duration {
+    font-size: 1.2vw; /* Dimensione del carattere della durata della canzone del 1.2% rispetto alla larghezza del viewport */
+    color: #666; /* Colore del testo della durata della canzone */
+    text-align: right;
+  }
+  
+  /* Stili per la lista delle canzoni */
+  #song-list {
+    margin-top: 2%; /* Margine superiore del 2% rispetto al parent container */
+  }
+  
+  .song {
+    margin-bottom: 2%; /* Margine inferiore del 2% rispetto al parent container */
+    display: flex; /* Utilizza flexbox per il layout */
+    justify-content: space-between; /* Allinea il titolo e la durata della canzone sui lati opposti */
+    align-items: center; /* Centra verticalmente gli elementi */
+  }
+  
+  .song-info {
+    flex: 1; /* Flessibilità per riempire lo spazio disponibile */
+  }
+  
+  .song-title {
+    font-weight: bold;
+  }
+  
+  .song-artist {
+    color: #666;
+    text-align: center;
+  }
+  
+  
+
+
+
+
+  #avviaChatButton {
+    position: fixed;
+    bottom: 2%; /* Distanza dal fondo della pagina */
+    right: 2%; /* Distanza dalla destra della pagina */
+    padding: 1% 2%; /* Padding interno */
+    background-color: #007bff; /* Colore di sfondo */
+    color: #fff; /* Colore del testo */
+    border: none; /* Rimuove il bordo */
+    border-radius: 5px; /* Bordo arrotondato */
+    cursor: pointer; /* Cambia il cursore al passaggio */
+    z-index: 9999; /* Assicura che il bottone sia sopra gli altri elementi */
+  }
+  
+  
+  
+  #chat {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20%; /* Larghezza del 20% della viewport */
+    height: 100%; /* Imposta l'altezza automatica */
+    background-color: #fff; /* Colore di sfondo bianco */
+    border-left: 1px solid #ddd; /* Bordo sinistro grigio */
+    overflow-y: auto; /* Aggiunge la barra di scorrimento verticale se il contenuto supera l'altezza */
+    z-index: 9998; /* Assicura che la chat sia dietro i bottoni */
+    padding-bottom: 6%; /* Aggiungi spazio inferiore per gli elementi di input */
+    box-sizing: border-box; /* Assicura che il padding non influenzi la larghezza e l'altezza totali */
+  }
+  
+  /* Stile per gli input e i pulsanti */
+  #inputUtente, #inviaMessaggioButton, #IndietroButton {
+    position: absolute;
+    bottom: 1%;
+    right: 5%;
+  }
+  
+  /* Stile per il campo di input dell'utente */
+  #inputUtente {
+    width: calc(100% - 4.5%); /* Larghezza meno lo spazio per i pulsanti */
+    height: 5%;
+    padding: 1%; /* Padding interno */
+    margin-right: -5%; /* Margine destro per separare il campo di input dai pulsanti */
+    margin-bottom: 16.4%;
+  }
+  
+  /* Stile per il pulsante "Invia" */
+  #inviaMessaggioButton, #IndietroButton {
+    padding: 2% 2%; /* Padding interno */
+    height: 5%;
+    border: none; /* Rimuove il bordo */
+    border-radius: 5px; /* Bordo arrotondato */
+    cursor: pointer; /* Cambia il cursore al passaggio */
+  }
+  
+  /* Stile per il pulsante "Invia" */
+  #inviaMessaggioButton {
+    background-color: #28a745; /* Colore di sfondo verde */
+    color: #fff; /* Colore del testo bianco */
+    width: 20%;
+  }
+  
+  /* Stile per il pulsante "Indietro" */
+  #IndietroButton {
+    background-color: #dc3545; /* Colore di sfondo rosso */
+    color: #fff; /* Colore del testo bianco */
+    width: 20%;
+    right: 70.5%; /* Sposta il pulsante "Indietro" a sinistra */
+  }
+  
+  /* Stile per i messaggi inviati dall'assistente */
+  .messaggio-ai {
+    background-color: #f2f2f2; /* Colore di sfondo grigio */
+    color: #333; /* Colore del testo nero */
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+  }
+  
+  /* Stile per i messaggi inviati dall'utente */
+  .messaggio-utente {
+    background-color: #007bff; /* Colore di sfondo celeste */
+    color: #fff; /* Colore del testo bianco */
+    padding: 1%;
+    margin: 1%;
+    height: 5%;
+    border-radius: 10px;
+  }
+  
+
+.hidden {
+  display: none;
+}
+
+
+
+
+  
+@media only screen and (max-width: 600px) {
+  .top {
+    height: 60px; /* Altezza della barra di navigazione ridotta */
+    justify-content: center; /* Allinea gli elementi al centro */
+  }
+
+  .Menu {
+    display: none; /* Nasconde il menu principale */
+  }
+
+  .Iscriviti {
+    justify-content: flex-end; /* Allinea il pulsante "Iscriviti" a destra */
+  }
+  
+  .logo {
+    display: none; /* Nasconde il logo */
+  }
+
+  .Iscriviti p {
+    margin: 0 10px; /* Riduce il margine tra i link nella parte destra */
+  }
+
+  .iscrizione {
+    margin-right: 20px; /* Riduce il margine del pulsante "Iscriviti" */
+  }
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .contenuto {
+    height: auto;
+    padding: 20px;
+  }
+
+  .contenuto h2,
+  .contenuto h3 {
+    font-size: 3rem;
+  }
+
+  .testo {
+    width: 100%;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  .Boxabbonamento1,
+  .Boxabbonamento2 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .riga1,
+  .riga2 {
+    flex-direction: column;
+  }
+
+  .numer1,
+  .numer2,
+  .numer3,
+  .numer4 {
+    width: 100%;
+  }
+}
+
