@@ -128,7 +128,7 @@ function cambiaScopri() {
 
 // Funzione per inviare una richiesta alle API di OpenAI
 async function sendOpenAIRequest(prompt) {
-    const apiKey = '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'; // Inserisci la tua chiave API qui
+    const apiKey = 'API_KEY'; //
 
     const data = {
         prompt: prompt,
@@ -162,7 +162,7 @@ async function sendOpenAIRequest(prompt) {
 
 // Funzione per creare un assistente
 async function createAssistant() {
-    const apiKey = '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'; // Inserisci la tua chiave API qui
+    const apiKey = 'API_KEY'; 
 
     const data = {
         name: "Gym Tutor",
@@ -319,7 +319,7 @@ function search(event) {
   if (event) {
     event.preventDefault();
   }
-  const playlist_id = '5cZv2PLCsr6lcZ8AC6zO73?si=6d5d82105d254ac3'; // Inserisci qui l'ID della playlist della McFit su Spotify
+  const playlist_id = '5cZv2PLCsr6lcZ8AC6zO73?si=6d5d82105d254ac3'; 
   fetch(`https://api.spotify.com/v1/playlists/${playlist_id}`, {
       headers: {
         'Authorization': 'Bearer ' + token
@@ -415,6 +415,6 @@ function chiudiModale() {
 }
  
 
-const client_id = '6d20aad5d19e41b3a1ef45375f2e1d43';
-const client_secret = '1d6300216d3042bab29a1508641a9cb0';
+const client_id = 'CLIENT_ID';
+const client_secret = 'CLIENT_SECRET';
 
